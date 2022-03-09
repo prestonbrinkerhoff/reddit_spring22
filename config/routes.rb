@@ -36,7 +36,7 @@ end
 # resources :parents do
 #   resources :child
 # end
-resources :topics, except: [:index, :show, :update, :create, :destroy]
+resources :topics, except: [:index, :show, :update, :create, :destroy] do
 resources :comments
 end
 # resources :comments, except: [:index, :show, :update, :create, :destroy]
